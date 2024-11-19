@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.topbar {
+    position: fixed;  
+    top: 0;  
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+header {
+    display: flex;
+    justify-content:flex-start; 
+    align-items: start;     
+    padding: 10px 10px 0px 10px;
+    background-color: #fdfdfd;
+    color: rgb(0, 85, 74);
+}
+
+header h1 {
+    font-size: 20px; 
+    padding-top: 20px;
+}
+
+.logo {
+    /* margin-right: 10px;  */
+    margin: 5px 10px 0px 20px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 48px;
+    
+}
+
+.nav-container {
+    display: flex;
+    flex: auto;
+    justify-content:flex-end; 
+    align-items: end; 
+    background-color: #fdfdfd;
+    padding: 0px 15px;
+}
+
+.nav-item {
+    list-style: none;
+    display: flex; 
+    justify-content:flex-end;
+}
+
+.nav-item li {
+    padding: 0px 20px 3px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #140131;
+    text-decoration: none;
+}
+
+.nav-item li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-item li:hover {
+    background-color: #555;
+}
+
+.nav-item li a:hover {
+    color: #cfcbcc;
+}
+
+/* Special styling for Sign in and Register */
+.special-link {
+    color: #fff; 
+    background-color: #007BFF; 
+    padding: 8px 15px; 
+    border-radius: 15px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.special-link:hover {
+    background-color: #0056b3; 
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 70px;   
+}
+
+.container img {
+    margin-top: 10px;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    list-style: none;
+    background-color: #333;
+    color: #cfcbcc;
+}
+
+aside h3 {
+    margin-top: 30px;
+    color: #cfcbcc;
+}
+
+aside li {
+    margin: 0px 10px 7px;
+}
+
+aside li a:hover {
+    color: #246aff;
+}
+
+aside li a {
+    color: #8fb6ec;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #330404;
+}
+
+.home-p {
+    background: #d7ccff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service {
+    background: #d7ccff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+form {
+    background: #d7ccff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input {
+    width: 60%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #313131;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 50%;
+    padding: 0.7rem;
+    background: #140131;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    /* margin-top: 20px;     */
+}
+
+footer ul a{
+    color: #d7ccff;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    list-style: none;
+}
+
+
+
+
+/* for larger screens than 768px */
+@media (min-width: 768px) {
+    .nav-item{
+        flex: 1 1 20%;
+    }
+}
+
+
+/* screens smaller than 768px */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 0px 10px;
+        padding-top: 160px;
+    }
+
+    .nav-item{
+        flex-direction: column;
+        flex: 1 1 45%;
+        list-style: none;
+        justify-content:center;
+    }
+
+    aside {
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    form input {
+        width: 95%;
+    }
+}
+
+
+/* screens smaller than 450px */
+@media (max-width: 480px) {
+    .main-container {
+        flex-direction: column;
+        padding-top: 60px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active + .nav-item {
+        display: flex;
+    }
+
+    aside {
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    form input {
+        width: 95%;
+    }
+}

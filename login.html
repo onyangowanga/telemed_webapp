@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemadicine Registration and Log in page</title>
+    <link rel="stylesheet" href="css/reg_stylesheet.css">
+</head>
+<body>
+    <div class="topbar">
+        <!-- Header -->
+        <header>
+        <div class="logo">
+            <a href="index2.html">
+                <img src="logo.png" alt="Telemedicine Logo">
+            </a>
+        </div>
+        <h1>PLP Telemedicine Service</h1>
+    </header>
+    
+        <!-- Navigation Bar -->
+        <nav class="nav-container">
+            <ul class="nav-item">
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="register.html" class="special-link">Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- forms and Sidebar -->
+    <div class="main-container">
+        <main class="forms">    
+            <!-- login form -->
+            <form id="loginForm">
+                <p>Already have an account? <br><i>Login below</i></p>
+                <h2>Login Form</h2>
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+                <div class="error-message" id="loginEmailError"></div><br>
+            
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                <div class="error-message" id="loginPasswordError"></div><br>
+            
+                <button type="submit">Login</button>
+            </form>
+        </main>
+
+        <!-- side bar -->
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Book an Appointment</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Patient Resources</a></li>
+                <li><a href="#">Consultants</a></li>
+                <li><a href="#">Medical Specialties</a></li>
+                <li><a href="#">Prescription Requests</a></li>
+                <li><a href="#">Lab Results</a></li>
+                <li><a href="#">Health Tips</a></li>
+                <li><a href="#">Emergency Contacts</a></li>
+                <li><a href="#">Billing and Insurance</a></li>
+                <li><a href="#">User Profile</a></li>
+                <li><a href="#">Contact Support</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Registration Form</a></li>
+                <li><a href="#">Login Form</a></li>
+            </ul>
+
+            <h3>Search</h3>
+            <input type="text" placeholder="Search...">
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PLP Telemedicine. All Rights Reserved.</p>
+        <div class="container">
+            <!-- <h2>Contact Us</h2> -->
+            <p>Email: contact@plptelemedicine.com</p>
+            <p>Phone: (254) 726-953346</p>
+            <p>Address: 5th Avenue Ngong'</p>
+        </div>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </footer>  
+    <script src="script.js"></script>
+    
+</body>
+</html>
